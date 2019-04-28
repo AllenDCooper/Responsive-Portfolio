@@ -25,7 +25,7 @@ h1, h2, h3 {
 
 h1 {
     display: block;
-    font-size: 2em;
+    font-size: 30px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
@@ -227,11 +227,54 @@ footer {
 /* media queries style */
 
 @media screen and (max-width: 980px) {
-
+    .wrapper {
+        width: 100%;
+    }
+    header {
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    nav, footer {
+        min-width: 0;
+    }
+    section {
+        width: 510px;
+        margin: 40px auto 0 40px;
+        padding: 20px 30px 40px 30px;
+    }
+    input, textarea {
+        width: calc(100% - 10px);
+        padding: 10px 0px 10px 10px;
+    }
+    .imageContainer, img, .photoTitle {
+        width: 242px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 0 10px 0;
+    }
+    #rightImage1, #rightImage2 {
+        margin: 0 0 10px 20px;
+    }
 }
 @media screen and (max-width: 768px) {
-    
-
+    .wrapper {
+        width: 100%;
+    }
+    header {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+    nav, footer {
+        min-width: 0;
+    }
+    section {
+        width: calc(90% - 40px);
+        margin: 20px auto 0 auto;
+    }
+    input, textarea {
+        width: calc(100% - 10px);
+        padding: 10px 0px 10px 10px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -241,6 +284,12 @@ footer {
 
     .wrapper, header, .imageContainer, img {
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #rightImage1, #rightImage2 {
+        margin-left: 0;
     }
 
     nav, footer {
@@ -275,9 +324,13 @@ footer {
         padding-right: 0;
         text-align: center;
     }
-    
+
     input, textarea {
         width: calc(100% - 10px);
         padding: 10px 0px 10px 10px;
+    }
+
+    nav {
+        position: static;
     }
 }
