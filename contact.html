@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <Title>Contact</Title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <!--wrapper for sticky footer-->
+        <div class="wrapper">
+            <!--Header-->
+            <nav class="clearfix">
+                <header>
+                    <div class="headerLeft">
+                        <h1>Allen Cooper</h1>
+                    </div>
+                    <ul class="headerRight">
+                        <li><a href="index.html">About</a></li>
+                        <li id="centerLink"><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </header>
+            </nav>
+            <!--Content Section-->
+            <section>
+                <h1 class="sectionHead">Contact</h1>
+                <form action="/my-handling-form-page" method="post">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="John Smith">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="user_mail" placeholder="example@gmail.com">
+                    </div>
+                    <div>
+                        <label for="msg">Message</label>
+                        <textarea id="msg" name="usermessage"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="button">Submit</button>
+                    </div>
+                </form>
+            </section>
+            <div class="push"></div>
+            </div>
+        <!--Footer-->
+        <footer>
+            <p>copyright &#169; 2019 Allen Cooper</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,283 @@
+/* styles for sticky footer */
+html {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+
+/* styles for general body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    background-image: url("concrete_seamless.png");
+    background-repeat: repeat;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding: 30px 0px 30px 0px;
+}
+
+/* styles for header */
+
+nav {
+    background-color:#ffffff;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #cccccc;
+    min-width: 960px;
+}
+
+header {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.headerLeft {
+    background-color: #4aaaa5;
+    color: white;
+    float: left;
+    padding: 0px 40px;
+}
+
+.headerRight {
+    float: right;
+    margin: 30px 0px 30px 30px;
+}
+
+li {
+    display: inline-block;
+}
+
+#centerLink {
+    border-style: solid;
+    border-width: 0px 1px;
+    border-color: #dddddd;
+    margin: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+    }
+
+/* styles for main content section */
+
+section {
+    width: 878px;
+    margin: 40px auto 0 auto;
+    padding: 20px 40px 40px 40px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+.sectionHead {
+    color: #4aaaa5;
+    padding-bottom: 30px;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #dddddd;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 36px;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p + p {
+    margin-top: 10px;
+}
+
+a {
+    color: #777777;
+}
+
+a:link {
+    text-decoration: none;
+    border: none;
+    color: #777777;
+}
+
+a:visited {
+    color: #777777;
+}
+
+/* styles for contact.html*/
+
+form {
+    margin: 0 auto;
+}
+
+form div + div {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 854px;
+    padding: 10px;
+}
+
+button {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    border-style: none;
+    padding: 8px 20px;
+}
+
+input::placeholder {
+    color: #777777;
+}
+
+textarea {
+    height: 200px;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styles for portfolio.html */
+
+.imageContainer {
+    width: 280px;
+    position: relative;
+    display: inline-block;
+    margin: 0px 30px 40px 0px;
+}
+
+img {
+    width: 280px;
+    height: 100%;
+}
+
+.photoTitle {
+    background-color: #4aaaa5;
+    position: absolute;
+    bottom: 15px;
+    width: 280px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 15px 0px;
+}
+
+.photoTitle:link {
+    color: #ffffff;
+}
+
+.photoTitle:visited {
+    color: #ffffff;
+}
+
+/* styles for index.html */
+
+#headShot {
+    float: left;
+    margin: 0px 30px 5px 0px;
+    width: 230px;
+    height: 100%;
+}
+
+/* styles for the footer */
+
+.push {
+    height: 140px;
+}
+
+footer {
+    background-color: #666666;
+    border-top-style: solid;
+    border-width: 8px;
+    border-color: #4aaaa5;
+    width: 100%;
+    padding-top: 40px;
+    height: 52px; 
+    color: #dddddd;
+    text-align: center;
+    min-width: 960px;
+}
+
+/* media queries style */
+
+@media screen and (max-width: 980px) {
+
+}
+@media screen and (max-width: 768px) {
+    
+
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .wrapper, header, .imageContainer, img {
+        width: 100%;
+    }
+
+    nav, footer {
+        min-width: 0;
+    }
+
+    ul {
+        min-height: 40px;
+        padding: 20px 0 0 0;
+    }
+
+    p, label {
+        clear: both;
+    }
+
+    .photoTitle, #headShot {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    section {
+        width: calc(90% - 80px);
+        margin: 20px auto 0 auto;
+    }
+
+    .headerLeft, .headerRight {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    input, textarea {
+        width: calc(100% - 10px);
+        padding: 10px 0px 10px 10px;
+    }
+}
